@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "RBC-oficial/1.0.0": {
+        "runtime": {
+          "RBC-oficial.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RBC-oficial/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

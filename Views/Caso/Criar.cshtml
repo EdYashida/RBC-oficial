@@ -1,0 +1,189 @@
+@model CasoModel
+@{
+    ViewData["Title"] = "Listagem de casos";
+}
+<div class="text-center">
+    
+<h1 class="display-4">Cadastro de caso</h1>
+
+</div>
+
+<form asp-controller="Caso" asp-action="Criar" method="post">
+  <div class="form-group">
+    <label for="crop-hist">crop-hist</label>
+    <input type="text" asp-for="crop-hist" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="Id">ID (Insira códigos acima de 300 para não conflitar com casos previamente presentes)</label>
+    <input type="text" asp-for="Id" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="germination">germination</label>
+    <input type="text" asp-for="germination" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="date">date</label>
+    <input type="text" asp-for="date" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="hall">hall</label>
+    <input type="text" asp-for="hall" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="area-damaged">area-damaged</label>
+    <input type="text" asp-for="areadamaged" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="severity">severity</label>
+    <input type="text" asp-for="severity" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="temp">temp</label>
+    <input type="text" asp-for="temp" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="plant-stand">plant-stand</label>
+    <input type="text" asp-for="plantstand" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="leafspots-halo">leafspots-halo</label>
+    <input type="text" asp-for="leafspotshalo" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="lodging">lodging</label>
+    <input type="text" asp-for="lodging" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="precip">precip</label>
+    <input type="text" asp-for="precip" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="steam-cankers">steam-cankers</label>
+    <input type="text" asp-for="steamcankers" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="seed">seed</label>
+    <input type="text" asp-for="seed" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="seed-discolor">seed-discolor</label>
+    <input type="text" asp-for="seeddiscolor" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="leafspot-size">leafspot-size</label>
+    <input type="text" asp-for="leafspotsize" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="leafstpots-marg">leafstpots-marg</label>
+    <input type="text" asp-for="leafstpotsmarg" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="canker-lesion">canker-lesion</label>
+    <input type="text" asp-for="cankerlesion" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="external decay">external decay</label>
+    <input type="text" asp-for="externaldecay" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="fruit spots">fruit spots</label>
+    <input type="text" asp-for="fruitspots" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="fruiting-bodies">fruiting-bodies</label>
+    <input type="text" asp-for="crophist" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="leaf-malf">leaf-malf</label>
+    <input type="text" asp-for="leafmalf" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="leaf-shread">leaf-shread</label>
+    <input type="text" asp-for="leafshread" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="fruit-pods">fruit-pods</label>
+    <input type="text" asp-for="fruitpods" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="int-discolor">int-discolor</label>
+    <input type="text" asp-for= "int-discolor" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="leaf-mild">leaf-mild</label>
+    <input type="text" asp-for="leafmild" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="leaves">leaves</label>
+    <input type="text" asp-for="leaves" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="mold-growth">mold-growth</label>
+    <input type="text" asp-for="crophist" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="mycellum">mycellum</label>
+    <input type="text" asp-for="mycellum" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="plant-growth">plant-growth</label>
+    <input type="text" asp-for="plantgrowth" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="roots">roots</label>
+    <input type="text" asp-for="roots" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="sclerotia">sclerotia</label>
+    <input type="text" asp-for="sclerotia" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="seed-size">seed-size</label>
+    <input type="text" asp-for="seedsize" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="shriveling">shriveling</label>
+    <input type="text" asp-for="shriveling" class="form-control" placeholder="Digite a info">
+  </div>
+
+  <div class="form-group">
+    <label for="stem">stem</label>
+    <input type="text" asp-for="stem" class="form-control" placeholder="Digite a info">
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Adicionar</button>
+<a class="btn btn-secondary" asp-controller="Caso" asp-action="Index" role="button"> Voltar </a>
+</form>

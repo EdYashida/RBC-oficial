@@ -1,0 +1,70 @@
+@model List<CasoModel>
+@{
+    ViewData["Title"] = "Listagem de casos";
+}
+<div class="text-center">
+
+    <div class="d-grip gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Caso" asp-action="Criar"> Adicionar novo caso</a>
+    </div>
+
+<h1 class="display-4">Listagem de casos</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">DescDoenca</th>
+      <th scope="col">crop-hist</th>
+      <th scope="col">germination</th>
+      <th scope="col">seed-tmt</th>
+      <th scope="col">date</th>
+      <th scope="col">hall</th>
+      <th scope="col">area-damaged</th>
+      <th scope="col">severity</th>
+      <th scope="col">temp</th>
+      <th scope="col">plant-stand</th>
+      <th scope="col">leafspots-halo</th>
+      <th scope="col">lodging</th>
+      <th scope="col">precip</th>
+      <th scope="col">steam-cankers</th>
+      <th scope="col">seed</th>
+      <th scope="col">seed-discolor</th>
+      <th scope="col">leafspot-size</th>
+      <th scope="col">leafstpots-marg</th>
+      <th scope="col">canker-lesion</th>
+      <th scope="col">external decay</th>
+      <th scope="col">fruit spots</th>
+      <th scope="col">fruiting-bodies</th>
+      <th scope="col">leaf-malf</th>
+      <th scope="col">leaf-shread</th>
+      <th scope="col">fruit-pods</th>
+      <th scope="col">int-discolor</th>
+      <th scope="col">leaf-mild</th>
+      <th scope="col">leaves</th>
+      <th scope="col">mold-growth</th>
+      <th scope="col">mycellum</th>
+      <th scope="col">plant-growth</th>
+      <th scope="col">roots</th>
+      <th scope="col">sclerotia</th>
+      <th scope="col">seed-size</th>
+      <th scope="col">shriveling</th>
+      <th scope="col">stem</th>
+    </tr>
+  </thead>
+  <tbody>
+      @if(Model != null && Model.Any())
+      {
+         foreach(CasoModel caso in Model)
+         {
+              <tr>
+      <th scope="row">@caso.Id</th>
+      <td>@caso.DescDoenca</td>
+      <td>@caso.date</td>
+      <td>@caso.germination</td>
+              </tr>
+         }
+      }
+  </tbody>
+</table>
+</div>
